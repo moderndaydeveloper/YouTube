@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 7rem;
+            height: 7rem;
+            border-radius: 1.25rem;
+            background-color: green;
+            position: relative;
+            /*Animation name can be anything of your choice*/
+            animation-name: move-div-in-rectangular-shape;
+            animation-duration: 8s;
+        }
+        /* Next to keyframes,
+        the animation name has to be as same as
+        what we have mentioned above  */
+        @keyframes move-div-in-rectangular-shape {
+            0% {
+                background-color: green;
+                left: 0;
+                top: 0;
+            }
+            25% {
+                background-color: pink;
+                left: 500px;
+                top: 0;
+            }
+            50% {
+                background-color: blue;
+                left: 500px;
+                top: 200px;
+            }
+            75% {
+                background-color: red;
+                left: 0;
+                top: 200px;
+            }
+            100% {
+                background-color: yellow;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Make div animate to move in rectangular shape</h1>
+    <div></div>
+    <p>
+        Once the animation is finished, 
+        the div goes back to its original style and position.
+    </p>
+
+</body>
+</html>

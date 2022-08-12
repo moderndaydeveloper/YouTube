@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix-Blend-Mode</title>
+</head>
+<style>
+    *{
+        /* To make the default margin and padding zero */
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        background: url(./demo-img.jpg);
+        /* height: 100vh is to make the image cover the whole screen */
+        height: 100vh;
+    } 
+    .cutout-text {
+        background-color: aquamarine;
+        /* This is the mix-blend-mode CSS property  */
+        mix-blend-mode: screen;
+        padding: 5rem 0;
+        text-align: center;
+    }
+    .cutout-text h1 {
+        font-size: 8rem;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="cutout-text">
+            <h1>LIKE, SHARE AND SUBSCRIBE</h1>
+        </div>
+    </div>
+</body>
+</html>
